@@ -7,9 +7,24 @@
   <body style="background-image:url(/dcim/img_tree.png); background-repeat:no-repeat; background-position: right top; background-color:white; background-attachment:fixed;">
     <div align="center">
 	 <audio controls>
-  <source src="http://www.radio.garden/visit/rohtak/yHmGGDWE" type="audio/mpeg">
-  <source src="http://www.radio.garden/visit/rohtak/yHmGGDWE" type="audio/ogg">
+  <source src="http://www.radio.garden/visit/rohtak/yHmGGDWE" type="audio/mpeg" id="audio">
+  <source src="http://www.radio.garden/visit/rohtak/yHmGGDWE" type="audio/ogg" id="audio">
 </audio>
+	    function play()
+{
+   audio.play();
+}
+
+function play()
+{
+   audio.pause
+}
+
+function stop()
+{
+   audio.pause();
+   audio.src = audio.src;
+}
 	  <p>Date/Time: <span id="datetime"></span></p>
 
 <script>
