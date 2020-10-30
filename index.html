@@ -1,18 +1,29 @@
 <html>
   <head>
 	  <meta charset="UTF-8">
-	  <meta http-equiv="refresh" content="1" />
     <title>Umesh Malik</title>
     <link rel="icon" = "image/png" href="/dcim/icon.png">
 	  <link rel="stylesheet" href="style.css">
+	  <script type="text/javascript">
+    window.onload = startInterval;
+    function startInterval()
+    {
+        setInterval("startTime();",1000);
+    }
+    
+    function startTime()
+    {
+        document.getElementById('time').innerHTML = Date();  
+    }
+  </script>
     </head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <body>
-    <div align="center">
+    <div id="time" align="center">
 	    <p><Font color="white"> Radio Rohtak<br> Ragni</Font></p>
 	 <audio controls>
 	    <source src="http://radiodhaakad.com:8000/live?type=.mp3" type="audio/mp3"></audio>
-	  <p>Date/Time: <span id="datetime"></span></p>
+	  <p>Date/Time: <span id="datetime"></span></p></div>
 
 <div align=bottom><script>
 var dt = new Date();
