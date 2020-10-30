@@ -19,13 +19,13 @@
     </head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <body>
-    <div id="time" align="center">
+    <div align="center">
 	    <p><Font color="white"> Radio Rohtak<br> Ragni</Font></p>
 	 <audio controls>
 	    <source src="http://radiodhaakad.com:8000/live?type=.mp3" type="audio/mp3"></audio>
 	  <p>Date/Time: <span id="datetime"></span></p></div>
 
-<div align=bottom><script>
+<div id="time"><script>
 var dt = new Date();
 document.getElementById("datetime").innerHTML = dt.toLocaleString();</script></div>
  <div class="container">
