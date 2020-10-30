@@ -1,5 +1,6 @@
 <html>
   <head>
+	  <meta charset="UTF-8">
     <title>Umesh Malik</title>
     <link rel="icon" = "image/png" href="/dcim/icon.png">
     </head>
@@ -14,11 +15,13 @@
 <script>
 var dt = new Date();
 document.getElementById("datetime").innerHTML = dt.toLocaleString();
-</script>
-     <br><br><br><br>
-     </div>
-  <button type="button" onclick="document.getElementById('Button').innerHTML=Date()" style="text-align:right" >
-	Click here dude!</button>
-	<p id="Button" style=" text-align:right"></p>
-      </body>
+ <div class="container">
+        <h1>Light &amp; Dark Mode</h1>
+	    <h2>Coe By WebDevTrick.Com</h2>
+ 
+        <input class="container_toggle" type="checkbox" id="switch" name="mode">
+        <label for="switch">Toggle</label>
+    </div>
+ 
+ <script  src="function.js"></script>      </body>
 </html>
