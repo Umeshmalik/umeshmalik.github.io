@@ -18,11 +18,11 @@
   </script>
     </head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <body>
+  <body><div>
 	    <p><Font color="white"> Radio Rohtak<br> Ragni</Font></p>
 	 <audio controls>
 	    <source src="http://radiodhaakad.com:8000/live?type=.mp3" type="audio/mp3"></audio>
-	  <p>Date/Time: <span id="datetime"></span></p>
+</div>
 <div id="time"><script>
 var dt = new Date();
 document.getElementById("datetime").innerHTML = dt.toLocaleString();</script></div>
@@ -31,6 +31,5 @@ document.getElementById("datetime").innerHTML = dt.toLocaleString();</script></d
         <input class="container_toggle" type="checkbox" id="switch" name="mode">
         <label for="switch">Toggle</label>
     </div>
- 
  <script  src="function.js"></script>      </body>
 </html>
